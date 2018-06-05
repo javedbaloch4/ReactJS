@@ -10,13 +10,19 @@
 <body>
   <div id="app"></div>
   <script type="text/babel">
-    const name = 'Javed Baloch';
-    const element = <h2>Hello, {name}</h2>;
+
+    function greetings(user) {
+        if(user) {
+            return <h1>Hello, {user}</h1>
+        } 
+        return <h2>Hello, Stranger</h2>
+    }
 
     ReactDOM.render(
-        element,
+        greetings(),
         document.getElementById("app")
     )
+    
   </script>
 </body>
 </html>

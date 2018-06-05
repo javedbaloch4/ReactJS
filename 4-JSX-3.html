@@ -10,13 +10,21 @@
 <body>
   <div id="app"></div>
   <script type="text/babel">
-    const name = 'Javed Baloch';
-    const element = <h2>Hello, {name}</h2>;
+
+    // Specifying childern with JSX
+
+    const element = (
+        <div>
+            <h1>Hello,</h1>
+            <h2>Good to see you here</h2>
+        </div>
+    )
 
     ReactDOM.render(
         element,
         document.getElementById("app")
     )
+    
   </script>
 </body>
 </html>
